@@ -10,7 +10,7 @@ function App() {
 
 
   useEffect(() => {
-    Axios.get(`https://api.coinstats.app/public/v1/coins?skip=0&limit=50&currency=USD`)
+    Axios.get(`https://api.coinstats.app/public/v1/coins?skip=0&currency=USD`)
     .then( res => {
       console.log(res)
       setCrypto(res.data.coins);
