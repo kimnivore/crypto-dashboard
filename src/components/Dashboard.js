@@ -26,7 +26,7 @@ export default function Dashboard(props) {
                 .filter((item) => {
                   return item.name.toLowerCase().includes(props.search.toLowerCase());
                 })
-                .map((item, id) => {
+                .map((item) => {
                   return (
                     <>
                       <tr key={item.id}>
