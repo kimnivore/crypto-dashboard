@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-.App {
-  text-align: center;
+body {
+  min-height: 100vh;
   font-family: 'Abel', sans-serif;
+  margin: auto;
+  background-color: white;
+
 }
 
 

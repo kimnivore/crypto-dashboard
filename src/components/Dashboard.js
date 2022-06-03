@@ -34,8 +34,9 @@ export default function Dashboard(props) {
                         <td className="logo">
                           <a href={item.websiteUrl}>
                             <img src={item.icon} alt="logo"/>
+                            <p>{item.name}</p>
                           </a>
-                          <p>{item.name}</p>
+                         
                         </td>
                         <td className="symbol">{item.symbol}</td>
                         <td>${item.marketCap.toFixed(2)}</td>
@@ -55,19 +56,18 @@ export default function Dashboard(props) {
 }
 
 const DashboardContainer = styled.div`
-border: 1px solid black;
 margin: 20px;
 
 .head {
     font-style: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 td{ 
     border: 1px solid black;
     width: 200px;
 }
 img {
-    width: 40px;
+    width: 50px;
     margin: 0 10px;
 }
 p {
@@ -75,8 +75,11 @@ p {
 }
 .logo {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
+}
+a {
+    display: flex;
+    text-decoration: none;
 }
 
 `
